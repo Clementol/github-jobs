@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import { useFetchJobs } from '../components/fetchJobs';
+import { useFetchJobs } from '../src/components/fetchJobs';
 import {Container} from 'react-bootstrap'
-import Job from '../components/Job';
-import JobsPagination from '../components/PagePagination';
-import SearchForm from '../components/searchForm';
+import Job from '../src/components/Job';
+import JobsPagination from '../src/components/PagePagination';
+import SearchForm from '../src/components/searchForm';
 
 
 
