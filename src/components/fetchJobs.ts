@@ -38,7 +38,7 @@ const useFetchJobs = (params: any, page: number) => {
              cancelToken: cancelToken.token,
             params: {markdown: true, page: page, params},
             headers: {'Access-Control-Allow-Origin': '*',
-                       'Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT'
+                       'Access-Control-Allow-Methods': 'GET,OPTIONS,PATCH,DELETE,POST,PUT'
                      }
         }).then( res => {
             console.log(res.data);
