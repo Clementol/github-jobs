@@ -37,7 +37,9 @@ const useFetchJobs = (params: any, page: number) => {
          axios.get(BASE_URL, {
              cancelToken: cancelToken.token,
             params: {markdown: true, page: page, params},
-            headers: {'Access-Control-Allow-Origin': '*'}
+            headers: {'Access-Control-Allow-Origin': '*',
+                       'Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST,PUT'
+                     }
         }).then( res => {
             console.log(res.data);
             dispatch({type: ACTION.GET_DATA,  payload: {jobs: res.data} })
